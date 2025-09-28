@@ -77,7 +77,7 @@ def ex8():
     if (a>=0):
         calculo = math.sqrt(a)
         print('a raiz quadrada de', a , 'é', calculo)
-    elif (a<0):
+    else:
         continha = (a**2)
         print('o quadrado de', a , 'é', continha)
 
@@ -90,9 +90,31 @@ def ex9():
         print('aprovado com a média', media)
     elif (media<7) and (media>=3):
         print('exame com a média', media)
-    elif (media<3):
+    else:
         print('reprovado com a média', media)
-ex9()
 
-              
+#Questão 10 
+def ex10():
+    a = float(input('insira um número'))
+    b = float(input('insira um número'))
+    c = float(input('insira um número'))
+    if (a>b) and (a>c):
+        print(a, 'é o maior número')
+    elif (b>a) and (b>c):
+        print(b, 'é o maior número')
+    else:
+        print(c, 'é o maior número')
 
+#Questão 11
+def ex11():
+    a = float(input('insira um número'))
+    b = float(input('insira um número'))
+    c = float(input('insira um número'))
+    if (a<b) and (a<c):
+        print(a, 'é o menor número')
+    elif (b<a) and (b<c):
+        print(b, 'é o menor número')
+    else:
+        print(c, 'é o menor número')
+
+    
