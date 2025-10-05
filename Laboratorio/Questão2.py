@@ -1,0 +1,36 @@
+mat = int(input('Qual a sua matrícula? '))
+nota1 = float(input('Qual a nota 1? '))
+nota2 = float(input('Qual a nota 2? '))
+nota3 = float(input('Qual a nota 3? '))
+mex = float(input('Qual a média dos exercícios? '))
+ma = (nota1 + nota2*2 + nota3*3 + mex)/7
+if (ma>=9.0):
+    print('Matrícula: ', mat)
+    print('Notas: ', nota1, nota2, nota3)
+    print('Média dos exercícios: ', mex)
+    print('Média de aproveitamento: ', ma)
+    print('Aprovado - conceito A')
+elif (ma>=7.5) and (ma<9.0):
+    print('Matrícula: ', mat)
+    print('Notas: ', nota1, nota2, nota3)
+    print('Média dos exercícios: ', mex)
+    print('Média de aproveitamento: ', ma)
+    print('Aprovado - conceito B')
+elif (ma>=6.0) and (ma<7.5):
+    print('Matrícula: ', mat)
+    print('Notas: ', nota1, nota2, nota3)
+    print('Média dos exercícios: ', mex)
+    print('Média de aproveitamento: ', ma)
+    print('Aprovado - conceito C')
+elif (ma>=4.0) and (ma<6.0):
+    print('Matrícula: ', mat)
+    print('Notas: ', nota1, nota2, nota3)
+    print('Média dos exercícios: ', mex)
+    print('Média de aproveitamento: ', ma)
+    print('Reprovado - conceito D')
+elif (ma<4.0):
+    print('Matrícula: ', mat)
+    print('Notas: ', nota1, nota2, nota3)
+    print('Média dos exercícios: ', mex)
+    print('Média de aproveitamento: ', ma)
+    print('Reprovado - conceito E')

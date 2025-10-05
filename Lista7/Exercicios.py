@@ -117,4 +117,84 @@ def ex11():
     else:
         print(c, 'é o menor número')
 
-    
+#Questão 14
+def ex14():
+    salario = float(input('Insira seu salário: '))
+    if (salario<=600):
+        print('Isento de desconto')
+    elif (salario>600) and (salario<=1200):
+        print('Esse é o desconto: ', salario*0.2)
+    elif(salario>1200) and (salario<=2000):
+        print('Esse é o desconto: ', salario*0.25)
+    else: 
+        print('Esse é o desconto: ', salario*0.3)
+
+#Questão 15
+def ex15():
+    preco = float(input('Coloque o preço do produto: '))
+    codigo = int(input('Coloque o código do produto: '))
+    if (codigo==1):
+        print('O preço final é ', preco, 'na região Sudeste')
+    elif (codigo==2):
+        print('O preço final é ', preco, 'na região Sul')
+    elif (codigo==3):
+        print('O preço final é ', preco, 'na região Cnetro-Oeste')
+    elif (codigo==4):
+        print('O preço final é ', preco, 'na região Nordeste')
+    elif (codigo==5):
+        print('O preço final é ', preco, 'na região Norte')
+    else:
+        print('O produto é importado e seu preço final é ', preco*1.15)
+
+#Questão 16
+def ex16():
+    a = int(input('Insira um número: '))
+    b = int(input('Insira um número: '))
+    c = int(input('Insira um número: '))
+# Vou precisar ver só 3 situações: se o 1 é maior que o 2; se o 2 é maior que o 3; se o 3 é maior que o 2
+    if (a<b): 
+        temp = a
+        a = b 
+        b = temp
+    if (a<c):
+        temp = a
+        a = c
+        c = temp
+    if(b<c):
+        temp = b
+        b = c
+        c = temp
+    print(a,b,c)
+
+#Questão extra
+def ex17():
+    a = int(input('Insira um número: '))
+    b = int(input('Insira um número: '))
+    c = int(input('Insira um número: '))
+    d = int(input('Insira um número: '))
+    if (a>b):
+        temp = a
+        a = b
+        b = temp
+    if (a>c):
+        temp = a
+        a = c
+        c = temp
+    if (a>d):
+        temp = a
+        a = d
+        d = temp
+    if (b>c):
+        temp = b
+        b = c
+        c = temp 
+    if (b>d):
+        temp = b
+        b = d
+        d = temp
+    if (c>d):
+        temp = c
+        c = d
+        d = temp
+    print('A ordem crescente é: ', a , b , c , d)
+#Lembre-se de que todo mundo deve receber algo, você estava trocando e alguns ficaram sem valor
